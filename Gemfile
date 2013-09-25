@@ -31,7 +31,15 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+group :development, :test do
+  gem 'capybara'
+  gem 'shoulda'
+  gem 'valid_attribute'
+  gem 'factory_girl'
+  gem 'rspec-rails'
+  gem 'launchy'
 
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
