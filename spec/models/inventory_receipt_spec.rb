@@ -39,8 +39,7 @@ end
 
   it do
     should_not have_valid(:quantity).when(
-      nil,
-      0
+      nil, ''
       )
   end
 end
